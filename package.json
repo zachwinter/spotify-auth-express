@@ -1,10 +1,10 @@
 {
-  "name": "spotify-auth",
-  "version": "3.0.0",
+  "name": "spotify-auth-express",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js"
   },
   "repository": {
     "type": "git",
@@ -13,12 +13,11 @@
   "author": "Zach Winter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zachwinter/spotify-auth/issues"
+    "url": "https://github.com/zachwinter/spotify-auth-express/issues"
   },
-  "homepage": "https://github.com/zachwinter/spotify-auth#readme",
+  "homepage": "https://github.com/zachwinter/spotify-auth-express#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "body-parser": "^1.19.0",
+    "axios": "^0.21.4",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "querystring": "^0.2.1"

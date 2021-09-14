@@ -8,7 +8,6 @@ const {
   DEFAULT_ROOT,
   DEFAULT_CROSS_ORIGIN,
   DEFAULT_REDIRECT,
-  DEFAULT_INIT_METHOD,
   DEFAULT_REFRESH_TOKEN_KEY,
   DEFAULT_ACCESS_TOKEN_KEY,
   SPOTIFY_AUTH_URL,
@@ -16,7 +15,7 @@ const {
 } = require('./constants')
 
 module.exports = (config = {}) => {
-  const { id, secret } = config
+  const { id, secret, app: initialize } = config
 
   if (!id || !secret) throw new Error('Client ID and Client Secret are both required.')
 
@@ -30,11 +29,9 @@ module.exports = (config = {}) => {
     setCrossOrigin: true,
     crossOrigin: DEFAULT_CROSS_ORIGIN,
     root: DEFAULT_ROOT,
-    initialize: false,
+    initialize,
     gzip: true,
     redirect: `http://localhost:${config.port || DEFAULT_PORT}${config.root || DEFAULT_ROOT}${config.redirect || DEFAULT_REDIRECT}`,
-    initMethod: DEFAULT_INIT_METHOD,
-    _initialized: false,
     accessTokenKey: DEFAULT_ACCESS_TOKEN_KEY,
     refreshTokenKey: DEFAULT_REFRESH_TOKEN_KEY,
     spotifyAuthUrl: SPOTIFY_AUTH_URL,
