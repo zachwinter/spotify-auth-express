@@ -1,6 +1,6 @@
 
 # spotify-auth-express
-> Plug-and-play Spotify OAUTH flow,
+> Plug-and-play Spotify OAUTH flow for Express.
 
 ```js
 const spotify = require('spotify-auth-express')
