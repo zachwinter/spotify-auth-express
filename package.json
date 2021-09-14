@@ -1,6 +1,6 @@
 {
   "name": "spotify-auth-express",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zachwinter/spotify-auth.git"
+    "url": "git+git@github.com:zachwinter/spotify-auth-express.git"
   },
   "author": "Zach Winter",
   "license": "MIT",
