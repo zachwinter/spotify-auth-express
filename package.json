@@ -1,18 +1,26 @@
 {
   "name": "spotify-auth",
-  "version": "1.0.0",
-  "description": "Spotify authentication microservice for local development.",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachwinter/spotify-auth.git"
   },
   "author": "Zach Winter",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachwinter/spotify-auth/issues"
+  },
+  "homepage": "https://github.com/zachwinter/spotify-auth#readme",
   "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
     "compression": "^1.7.4",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "querystring": "^0.2.0",
-    "request": "^2.88.2"
+    "querystring": "^0.2.1"
   }
 }
