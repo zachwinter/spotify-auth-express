@@ -1,19 +1,20 @@
 
 # spotify-auth-express
-> Plug-and-play Spotify OAUTH flow for Express.
+### Plug-and-play Spotify OAUTH flow for Express.
+
+> Instantiate and initialize a new Express API.
 
 ```js
-// Instantiate and initialize a new Express API.
 const spotify = require('spotify-auth-express')
 
 const app = spotify({
   client: 'CLIENT_ID_HERE',
   secret: 'CLIENT_SECRET_HERE'
 })
+```
 
-...
-
-// Extend an existing Express API.
+> Extend an existing Express API.
+```js
 const express = require('express')
 const spotify = require('spotify-auth-express')
 
@@ -28,16 +29,16 @@ spotify({
 app.listen(...)
 
 /**
-
+ * 
 app.get('/spotify/auth', (req, res) => {
    ...
    res.redirect('YOUR_REDIRECT_URL')
 })
-
 */
+
 ```
 
-### Configuration
+#### Configuration
 
 The following optional keys can be passed in addition to your application & client IDs:
 
@@ -50,7 +51,7 @@ The following optional keys can be passed in addition to your application & clie
 * root | `String` | default: `'/spotify'`
 * intialize | `Boolean` | default: `false`
 * gzip | `Boolean` | default: true`
-* redirect | `String` | default: \``http://localhost:${config.port || DEFAUL_PORT}${config.root || DEFAULT_ROOT}${config.redirect || DEFAULT_REDIRECT}`
+* redirect | `String` | default: \``http://localhost:${config.port || DEFAUL_PORT}${config.root || DEFAULT_ROOT}${config.redirect || DEFAULT_REDIRECT}`\`
 * accessTokenKey | `String` |  default: `'SPOTIFY_ACCESS_TOKEN'`,
 * refreshTokenKey | `String` | default: `'SPOTIFY_REFRESH_TOKEN'`,
 * spotifyAuthUrl | `String` | defailt: `https://accounts.spotify.com/authorize?`
