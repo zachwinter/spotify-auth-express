@@ -49,7 +49,7 @@ The following optional keys can be passed in addition to your application & clie
 * intialize | `Boolean` | default: `false`
 * gzip | `Boolean` | default: true`
 * redirect | `String` | default: \``http://localhost:${config.port || DEFAUL_PORT}${config.root || DEFAULT_ROOT}${config.redirect || DEFAULT_REDIRECT}`
-* accessTokenKey | `String` |  default: \``SPOTIFY_ACCESS_TOKEN`\`,
-* refreshTokenKey | `String` | default: \``SPOTIFY_REFRESH_TOKEN`'`,
+* accessTokenKey | `String` |  default: `'SPOTIFY_ACCESS_TOKEN'`,
+* refreshTokenKey | `String` | default: `'SPOTIFY_REFRESH_TOKEN'`,
 * spotifyAuthUrl | `String` | defailt: `https://accounts.spotify.com/authorize?`
 * spotifyTokenUrl | `String` | default: `https://accounts.spotify.com/api/token`
