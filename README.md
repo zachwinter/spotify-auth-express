@@ -2,7 +2,7 @@
 # spotify-auth-express
 ### Plug-and-play Spotify OAUTH flow for Express.
 
-> Instantiate and initialize a new Express API.
+Instantiate and initialize a new Express API:
 
 ```js
 const spotify = require('spotify-auth-express')
@@ -13,7 +13,7 @@ const app = spotify({
 })
 ```
 
-> Extend an existing Express API.
+Extend an existing Express API: 
 ```js
 const express = require('express')
 const spotify = require('spotify-auth-express')
@@ -25,7 +25,10 @@ spotify({
   client: 'CLIENT_ID_HERE',
   secret: 'CLIENT_SECRET_HERE'
 })
+```
 
+And you get...
+```js
 app.listen(...)
 
 /**
