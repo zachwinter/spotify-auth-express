@@ -2,7 +2,7 @@
 # spotify-auth-express
 ### Plug-and-play Spotify OAUTH flow for Express.
 
-Instantiate and initialize a new Express API:
+You can either initialize a new Express API:
 
 ```js
 const spotify = require('spotify-auth-express')
@@ -13,7 +13,7 @@ const app = spotify({
 })
 ```
 
-Extend an existing Express API: 
+... or extend an existing one:
 ```js
 const express = require('express')
 const spotify = require('spotify-auth-express')
@@ -25,21 +25,19 @@ spotify({
   client: 'CLIENT_ID_HERE',
   secret: 'CLIENT_SECRET_HERE'
 })
+
+app.listen(...)
 ```
 
-And you get...
+In return, you get:
 ```js
-app.listen(...)
+app.get('/spotify/auth', (req, res) => {
+  ...
+  res.redirect('YOUR_REDIRECT_URL')
+})
 
-/**
-
-  app.get('/spotify/auth', (req, res) => {
-    ...
-    res.redirect('YOUR_REDIRECT_URL')
-  })
-
-*/
-
+app.get('/spotify/callback/' ...)
+app.get('/spotify/refresh/' ...)
 ```
 
 #### Configuration
