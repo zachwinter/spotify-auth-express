@@ -29,11 +29,12 @@ spotify({
 app.listen(...)
 
 /**
- * 
-app.get('/spotify/auth', (req, res) => {
-   ...
-   res.redirect('YOUR_REDIRECT_URL')
-})
+
+  app.get('/spotify/auth', (req, res) => {
+    ...
+    res.redirect('YOUR_REDIRECT_URL')
+  })
+
 */
 
 ```
